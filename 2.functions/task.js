@@ -1,6 +1,12 @@
 // Задание 1
 function getArrayParams(arr) {
   let min, max, sum, avg;
+  for (let i = 0; i < arr.length; i++) {
+    min = arr[0];
+    if (arr[i] < min) {
+      min = arr[i]
+    }
+  }
 
   // Ваш код
 
@@ -21,7 +27,7 @@ function makeWork(arrOfArr, func) {
 
   // Ваш кода
   // for ...
-  
+
   return max;
 }
 
